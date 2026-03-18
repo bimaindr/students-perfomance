@@ -14,43 +14,43 @@ Jaya Jaya Institut menghadapi tantangan besar dalam mempertahankan mahasiswa hin
 Proyek ini mencakup pengembangan sistem prediksi dan pemantauan kelulusan mahasiswa yang terdiri dari beberapa tahapan utama:
 
 1. Eksplorasi & Analisis Data (EDA)
-Melakukan pembersihan data (data cleaning) pada dataset mahasiswa Jaya Jaya Institut.
+  -  Melakukan pembersihan data (data cleaning) pada dataset mahasiswa Jaya Jaya Institut.
 
-Menganalisis korelasi antara faktor demografi, ekonomi, dan akademik terhadap status kelulusan.
+  -  Menganalisis korelasi antara faktor demografi, ekonomi, dan akademik terhadap status kelulusan.
 
-Visualisasi distribusi data untuk memahami karakteristik mahasiswa yang berisiko dropout.
+  -  Visualisasi distribusi data untuk memahami karakteristik mahasiswa yang berisiko dropout.
 
 2. Rekayasa Fitur (Feature Engineering)
-Pembuatan fitur baru untuk meningkatkan akurasi model, antara lain:
+  -  Pembuatan fitur baru untuk meningkatkan akurasi model, antara lain:
 
-Financial_High_Risk: Identifikasi risiko keuangan (gabungan status hutang dan pelunasan UKT).
+  -  Financial_High_Risk: Identifikasi risiko keuangan (gabungan status hutang dan pelunasan UKT).
 
-Academic_Success_Rate: Rata-rata tingkat keberhasilan unit mata kuliah.
+  -  Academic_Success_Rate: Rata-rata tingkat keberhasilan unit mata kuliah.
 
-Grade_Trend: Analisis kenaikan atau penurunan nilai antar semester.
+  -  Grade_Trend: Analisis kenaikan atau penurunan nilai antar semester.
 
-Transformasi data (Encoding & Scaling) agar siap diproses oleh algoritma Machine Learning.
+  -  Transformasi data (Encoding & Scaling) agar siap diproses oleh algoritma Machine Learning.
 
 3. Pengembangan Model Prediksi
-Penerapan algoritma Logistic Regression (atau algoritma klasifikasi lainnya) untuk memprediksi status mahasiswa: Dropout, Enrolled, atau Graduate.
+  -  Penerapan algoritma Logistic Regression (atau algoritma klasifikasi lainnya) untuk memprediksi status mahasiswa: Dropout, Enrolled, atau Graduate.
 
-Penanganan ketidakseimbangan data (class imbalance) menggunakan teknik seperti SMOTE (jika diperlukan).
+  -  Penanganan ketidakseimbangan data (class imbalance) menggunakan teknik seperti SMOTE (jika diperlukan).
 
-Evaluasi performa model menggunakan metrik Accuracy, Precision, Recall, dan F1-Score.
+  -  Evaluasi performa model menggunakan metrik Accuracy, Precision, Recall, dan F1-Score.
 
 4. Pengembangan Prototype Aplikasi (Deployment)
-Membangun antarmuka berbasis web menggunakan Streamlit.
+  -  Membangun antarmuka berbasis web menggunakan Streamlit.
 
-Menyediakan fitur input data mahasiswa dengan standar IPK Indonesia (0.0 - 4.0).
+  -  Menyediakan fitur input data mahasiswa dengan standar IPK Indonesia (0.0 - 4.0).
 
-Sistem memberikan output berupa prediksi status beserta rekomendasi tindakan strategis bagi pihak kampus.
+  -  Sistem memberikan output berupa prediksi status beserta rekomendasi tindakan strategis bagi pihak kampus.
 
 5. Dashboard Monitoring Business Intelligence
-Penyediaan dataset yang telah diproses untuk kebutuhan pelaporan manajemen.
+  -  Penyediaan dataset yang telah diproses untuk kebutuhan pelaporan manajemen.
 
-Pembuatan dashboard interaktif menggunakan Metabase (via Docker) untuk pemantauan tingkat tinggi (High-Level Monitoring).
+  -  Pembuatan dashboard interaktif menggunakan Metabase (via Docker) untuk pemantauan tingkat tinggi (High-Level Monitoring).
 
-Visualisasi tren dropout berdasarkan kategori beasiswa dan risiko finansial.
+  -  Visualisasi tren dropout berdasarkan kategori beasiswa dan risiko finansial.
 ### Persiapan
 
 Sumber data: https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv
