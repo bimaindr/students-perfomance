@@ -11,7 +11,7 @@ st.set_page_config(page_title="Jaya Jaya Institut - Dropout Predictor", layout="
 @st.cache_resource
 def load_model():
     model_path = os.path.join('model', 'model_logistic_regression.pkl')
-    le_path = os.path.join('model', 'label_encoder.pkl')
+    le_path = os.path.join('model/label_encoder.pkl')
     
     if not os.path.exists(model_path):
         st.error(f"File model tidak ditemukan di folder 'model/'.")
