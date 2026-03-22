@@ -60,23 +60,46 @@ Setup environment:
 conda create --name students_perfomance python=3.9
 conda activate students_perfomance
 pip install streamlit==1.32.0 pandas==2.2.2 scikit-learn==1.3.2 joblib==1.3.1 imbalanced-learn==0.11.0 scipy==1.10.1 numpy==1.24.4
+pip install psycopg2
 ```
 
 ## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+1. SKS Lulus Berdasarkan Umur
+   Grafik ini menunjukkan tren yang menarik: mahasiswa dengan usia yang lebih dewasa (Diatas 35 Tahun) cenderung memiliki rata-rata kelulusan SKS yang lebih
+   tinggi dibandingkan mahasiswa yang lebih muda (18-19 Tahun).
+   Insight Bisnis: Mahasiswa dewasa mungkin memiliki manajemen waktu atau motivasi yang lebih matang. Hal ini membuktikan bahwa usia bukan hambatan bagi performa
+   akademik di institusi ini.
+
+2. Distribusi Umur dan Total Mahasiswa
+   Grafik ini memberikan gambaran volume populasi mahasiswa.
+   Insight Bisnis: Mayoritas populasi mahasiswa terkonsentrasi di kelompok usia 18-19 Tahun (hampir 2.000 mahasiswa). Sementara itu, kelompok usia lainnya
+   digabungkan dalam kategori "Lainnya", yang menunjukkan segmentasi pasar institusi didominasi oleh lulusan baru SMA.
+
+3. Memiliki Hutang vs Tidak (Donut Chart)
+   Ini adalah indikator risiko paling krusial untuk prediksi dropout.
+   Insight Bisnis: Sebagian besar mahasiswa (88.6%) tidak memiliki hutang, namun ada 11.4% mahasiswa yang tercatat memiliki kendala finansial
+   Rekomendasi: Angka 11.4% ini harus dimonitor secara ketat, karena berdasarkan analisis data science, status hutang seringkali menjadi pemicu utama mahasiswa
+   memutuskan untuk berhenti studi (dropout).
+
 
 ## Menjalankan Sistem Machine Learning
 Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
-
+Melalui Link Cloud Deployment : https://students-perfomance-kbsrld7hdruyutgkfpgcsz.streamlit.app/
 ```
-
+conda activate students_perfomance
+streamlit run app.py
 ```
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+Mahasiswa yang memiliki status Debtor (Hutang) dan mereka yang tidak melakukan pembayaran Tuition Fees tepat waktu memiliki probabilitas dropout yang jauh lebih tinggi. Dari sisi akademik, performa pada Semester 1 merupakan indikator awal yang paling krusial; penurunan nilai yang drastis di awal semester berkorelasi kuat dengan keputusan mahasiswa untuk berhenti.
+
+Dengan adanya sistem ini, institusi kini memiliki alat Deteksi Dini (Early Warning System) yang mampu memprediksi risiko dropout sebelum hal tersebut benar-benar terjadi.
+
+  - Intervensi Finansial: Memberikan program cicilan atau bantuan beasiswa khusus bagi 11.4% mahasiswa yang terdeteksi sebagai Debtor berisiko tinggi.
+
+  - Pendampingan Akademik: Melakukan konseling intensif bagi mahasiswa yang memiliki indeks prestasi rendah di Semester 1 untuk mencegah akumulasi kegagalan di semester berikutnya.
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
-#
+- Memberikan program cicilan UKT yang lebih fleksibel atau skema "Dana Talangan" internal bagi mahasiswa yang terdeteksi sebagai Debtor namun memiliki performa akademik yang baik.
+- Mengintegrasikan hasil prediksi model ke dalam sistem informasi akademik (SIAKAD). Staf dosen wali akan menerima notifikasi otomatis jika ada mahasiswa yang diprediksi "Dropout" berdasarkan nilai Semester 1 mereka.
+- Meninjau kembali kriteria penerima beasiswa. Alihkan sebagian kuota beasiswa untuk mahasiswa yang secara akademik mampu (Graduate) namun secara finansial terancam (Debtor) agar mereka tidak berhenti di tengah jalan.
