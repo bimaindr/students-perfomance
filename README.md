@@ -53,11 +53,13 @@ Antarmuka Pengguna: Membangun dashboard interaktif menggunakan Streamlit.
     - Cloud Hosting: Melakukan publikasi aplikasi ke Streamlit Community Cloud sehingga dapat diakses secara publik melalui URL.
 ### Persiapan
 
-Sumber data: ....
+Sumber data: https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv
 
 Setup environment:
 ```
-
+conda create --name students_perfomance python=3.9
+conda activate students_perfomance
+pip install streamlit==1.32.0 pandas==2.2.2 scikit-learn==1.3.2 joblib==1.3.1 imbalanced-learn==0.11.0 scipy==1.10.1 numpy==1.24.4
 ```
 
 ## Business Dashboard
