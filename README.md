@@ -83,7 +83,6 @@ pip install psycopg2
 
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 Melalui Link Cloud Deployment : https://students-perfomance-kbsrld7hdruyutgkfpgcsz.streamlit.app/
 ```
 conda activate students_perfomance
