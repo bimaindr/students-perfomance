@@ -1,12 +1,20 @@
 # Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
 
 ## Business Understanding
-aya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik. Akan tetapi, terdapat banyak juga siswa yang tidak menyelesaikan pendidikannya alias dropout.
+Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik. Akan tetapi, terdapat banyak juga siswa yang tidak menyelesaikan pendidikannya alias dropout.
 
 Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus.
-### Permasalahan Bisnis
-Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
 
+### Permasalahan Bisnis
+Masalah utama yang dihadapi Jaya Jaya Institut adalah jumlah mahasiswa yang tidak menyelesaikan studinya (dropout). Hal ini berdampak langsung pada:
+
+  - Stabilitas Finansial: Kehilangan pendapatan berkelanjutan dari uang kuliah tunggal (UKT).
+
+  - Efisiensi Sumber Daya: Kursi kosong di kelas yang seharusnya bisa diisi oleh mahasiswa aktif, membuat alokasi dosen dan fasilitas menjadi tidak optimal.
+
+Pihak manajemen kampus selama ini cenderung bersifat reaktif. Mereka baru menyadari mahasiswa bermasalah ketika mahasiswa tersebut sudah berhenti membayar UKT atau tidak muncul di kelas selama satu semester.
+
+Masalah: Tidak adanya sistem peringatan dini (early warning system) yang dapat memprediksi risiko dropout sebelum hal itu benar-benar terjadi.
 ### Cakupan Proyek
 Tuliskan cakupan proyek yang akan dikerjakan.
 
